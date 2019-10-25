@@ -1,0 +1,13 @@
+# Project maintainers file - Ballena Roja
+[Org]
+	[Org."Core maintainers"]
+		people = [
+			"kdetony"
+		]
+
+[people]
+
+	[people.kdetony]
+	Name = "Atnhony Mogrovejo"
+	Email = "kdetony@ballenaroja.services"
+	GitHub = "kdetony"
