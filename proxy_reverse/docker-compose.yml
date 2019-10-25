@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    reverseproxy:
+        container_name: proxyweb
+        build: .
+        ports:
+            - 8080:8080
+            - 8081:8081
+        restart: always
+
+    nginx:
+        container_name: docker-nginx
+        depends_on:
+            - reverseproxy
+        image: nginx:alpine
+        volumes:
+        - ./app1:/usr/share/nginx/html
+        restart: always
+
+    apache:
+        container_name: docker-apache
+        depends_on:
+            - reverseproxy
+        image: httpd:alpine
+        volumes:
+        - ./app2:/usr/local/apache2/htdocs/
+        restart: always
