@@ -1,0 +1,12 @@
+<html>
+<head> 
+    {% if titulo %}
+    <title>{{ titulo }} - Plantilla Web con Flask</title>
+    {% else %}
+    <title>Welcome Web con Flask</title>
+    {% endif %}
+    </head>    
+  <body>
+      <h1>Hello, {{ usuario.nombre }}!</h1>
+  </body>
+</html>
