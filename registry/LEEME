@@ -1,0 +1,12 @@
+Registry UI
+================
+
+# Bajando imagenes:
+
+> docker pull joxit/docker-registry-ui:latest
+
+> docker pull joxit/docker-registry-ui:static
+
+# Ejecutando compose
+
+> docker-compose -f registry.yml up -d
