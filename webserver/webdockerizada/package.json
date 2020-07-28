@@ -1,0 +1,14 @@
+{
+  "name": "container-web-test",
+  "private": true,
+  "version": "0.1",
+  "description": "Demo app Dockerizada",
+  "main": "app.js",
+  "author": "kdetony <kdetony@kdetony.com>",
+  "dependencies": {
+    "express": "4.17.1",
+    "pug": "2.0.4",
+    "mocha": "7.1.1",
+    "supertest": "4.0.2"
+  }
+}
